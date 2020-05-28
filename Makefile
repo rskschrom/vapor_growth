@@ -5,7 +5,7 @@ FCFLAGS = -Ofast
 FLIBS = 
 LPATH = -L/usr/local/lib
 IPATH = -I/usr/local/include
-OBJS = thermo.o
+OBJS = thermo.o micro.o
 MAIN = test.f90
 
 # main program compilation
