@@ -5,11 +5,11 @@ FCFLAGS = -Ofast
 FLIBS = 
 LPATH = -L/usr/local/lib
 IPATH = -I/usr/local/include
-OBJS = thermo.o micro.o
-MAIN = test.f90
+OBJS = thermo.o micro.o solver.o util.o
+MAIN = box_model.f90
 
 # main program compilation
-test : $(MAIN) $(OBJS)
+box_model : $(MAIN) $(OBJS)
 	$(FC) $(FCFLAGS) -o $@ $^ $(IPATH) $(FLIBS)
 
 # object files
